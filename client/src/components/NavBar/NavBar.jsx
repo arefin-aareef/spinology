@@ -1,27 +1,69 @@
+import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../Providers/AuthProvider";
+import "./NavBar.css";
 
 const NavBar = () => {
+
+  const { user, logOut } = useContext(AuthContext);
+  const [scrolled, setScrolled] = useState(false);
+
+
+  const handleLogOut = () => {
+    logOut()
+      .then(() => {})
+      .catch((error) => console.log(error));
+  };
+
+  useEffect(() => {
+    const onScroll = () => {
+      if (window.scrollY > 10) {
+        setScrolled(true);
+      } else setScrolled(false);
+    };
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  });
+
   const navOptions = (
-    <div className="flex flex-col lg:flex-row font-semibold">
+    <div className="flex flex-col lg:flex-row font-semibold navigation">
       <li>
-        <a>Home</a>
+        <Link to="/">Home</Link>
       </li>
       <li>
-        <a>Bicycles</a>
+        <Link>Bicycles</Link>
       </li>
       <li>
-        <a>Accessories</a>
+        <Link>Accessories</Link>
       </li>
       <li>
-        <a>Services</a>
+        <Link>Services</Link>
       </li>
-      <li>
-        <Link to="/login">Login</Link>
-      </li>
+      {user ? (
+        <div className="flex flex-col lg:flex-row">
+          <li onClick={handleLogOut} className=" inline-block">
+            <Link to="/">Logout</Link>
+          </li>
+
+          <img
+            style={{ width: 36, height: 36, borderRadius: "20%" }}
+            src={user?.photoURL}
+            alt={user?.displayName}
+            title={user?.email}
+            className="mx-3"
+          />
+        </div>
+      ) : (
+        <li className="">
+          <Link to="/login">Login</Link>
+        </li>
+      )}
     </div>
   );
   return (
-    <div className="navbar bg-transparent fixed z-20 max-w-screen-2xl text-white">
+    <div className={`navbar bg-transparent fixed z-20 max-w-screen-2xl text-white ${
+      scrolled ? "scrolled " : "transition-all duration-500 ease-in"
+    }`}>
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -42,7 +84,7 @@ const NavBar = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-slate-700 rounded-box w-52"
           >
             {navOptions}
           </ul>

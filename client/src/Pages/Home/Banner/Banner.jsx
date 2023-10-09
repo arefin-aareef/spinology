@@ -14,7 +14,7 @@ const Banner = () => {
           <p className="mb-5 text-xl">
           Your One-Stop Destination for Bikes and Beyond
           </p>
-          <Link to='/signup'><button className="btn btn-outline text-white hover:bg-white hover:text-black">Explore Now</button></Link>
+          <Link to='/'><button className="btn btn-outline text-white hover:bg-white hover:text-black">Explore Your Favorite Cycle</button></Link>
         </div>
       </div>
     </div>

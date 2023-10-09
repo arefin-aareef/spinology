@@ -1,0 +1,15 @@
+.navigation a:hover {
+  background-color: #fff !important;
+}
+.navigation a:focus {
+  background-color: #e2e8f0 !important;
+}
+.navigation a:active {
+  background-color: #818cf8 !important;
+}
+.scrolled {
+  background-color: #04364A;
+  transition-property: all;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in;
+}

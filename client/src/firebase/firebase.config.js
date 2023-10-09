@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBdxk9jijsve8mX4P2Gbjg0u_kunrbF3jQ",
-  authDomain: "spinology-5cc44.firebaseapp.com",
-  projectId: "spinology-5cc44",
-  storageBucket: "spinology-5cc44.appspot.com",
-  messagingSenderId: "1080602756994",
-  appId: "1:1080602756994:web:c01af7143993a75cba719b"
+  apiKey: import.meta.env.VITE_apiKey,
+  authDomain: import.meta.env.VITE_authDomain,
+  projectId: import.meta.env.VITE_projectId,
+  storageBucket: import.meta.env.VITE_storageBucket,
+  messagingSenderId: import.meta.env.VITE_messagingSenderId,
+  appId: import.meta.env.VITE_appId
 };
 
 // Initialize Firebase
