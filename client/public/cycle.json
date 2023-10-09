@@ -1,0 +1,87 @@
+[
+    {
+      "name": "Mountain Bike",
+      "image": "https://img.freepik.com/free-photo/vintage-metal-white-bicycle-toy-wooden-table_155003-6411.jpg?w=740&t=st=1696874636~exp=1696875236~hmac=e263d836376c1d8f7b520f64b2b895dc79cfd7bf9e2aa89efdc94150699ebb14",
+      "category": "Mountain Bikes",
+      "price": 599.99,
+      "details": "A rugged mountain bike designed for off-road adventures."
+    },
+    {
+      "name": "Road Bike",
+      "image": "https://img.freepik.com/free-vector/vector-illustration-modern-bicycle_1441-712.jpg?w=740&t=st=1696874878~exp=1696875478~hmac=3b4243bc6d70134d9f090e02f37b44207265d2ab4e0a88d555585181a1e14ad2",
+      "category": "Road Bikes",
+      "price": 899.99,
+      "details": "A sleek and fast road bike for long-distance cycling."
+    },
+    {
+      "name": "Hybrid Bike",
+      "image": "https://img.freepik.com/free-vector/illustration-bicycle_53876-44045.jpg?t=st=1696874953~exp=1696875553~hmac=92cce9c628ec7f228f38c4228175e0e83479dcdcc75b33656c568325f28d6f5c",
+      "category": "Hybrid Bikes",
+      "price": 449.99,
+      "details": "A versatile bike for both city commuting and light trails."
+    },
+    {
+      "name": "BMX Bike",
+      "image": "https://img.freepik.com/premium-photo/bike-red_540486-1072.jpg",
+      "category": "BMX Bikes",
+      "price": 299.99,
+      "details": "A trick-ready BMX bike for stunts and jumps."
+    },
+    {
+      "name": "Cruiser Bike",
+      "image": "https://img.freepik.com/premium-photo/gravel-bicycle_540486-1080.jpg",
+      "category": "Cruiser Bikes",
+      "price": 379.99,
+      "details": "A comfortable and stylish bike for leisurely rides."
+    },
+    {
+      "name": "Electric Bike",
+      "image": "https://img.freepik.com/premium-photo/mountain-bike_540486-1084.jpg",
+      "category": "Electric Bikes",
+      "price": 1499.99,
+      "details": "An eco-friendly electric bike for effortless commuting."
+    },
+    {
+      "name": "Folding Bike",
+      "image": "https://img.freepik.com/premium-photo/electric-bicycle_540486-1075.jpg",
+      "category": "Folding Bikes",
+      "price": 549.99,
+      "details": "A compact folding bike for easy storage and transport."
+    },
+    {
+      "name": "Kids' Bike",
+      "image": "https://img.freepik.com/premium-photo/black-white-mountain-bike-white-background-3d-rendering_476612-7340.jpg",
+      "category": "Kids' Bikes",
+      "price": 129.99,
+      "details": "A colorful and fun bike designed for kids."
+    },
+    {
+      "name": "Tandem Bike",
+      "image": "https://img.freepik.com/premium-photo/mountain-bicycle-3d-model-body-structure-wire-model_324757-2041.jpg",
+      "category": "Tandem Bikes",
+      "price": 999.99,
+      "details": "A two-seater bike for tandem cycling adventures."
+    },
+    {
+      "name": "Commuter Bike",
+      "image": "https://img.freepik.com/premium-photo/mountain-bicycle-3d-model-body-structure-wire-model_324757-2048.jpg",
+      "category": "Commuter Bikes",
+      "price": 679.99,
+      "details": "A reliable commuter bike for daily urban travel."
+    },
+    {
+      "name": "Fat Tire Bike",
+      "image": "https://img.freepik.com/premium-photo/mountain-bike-isolated-white_263357-1617.jpg",
+      "category": "Fat Tire Bikes",
+      "price": 749.99,
+      "details": "A sturdy bike with fat tires for off-road terrain."
+    },
+    {
+      "name": "Vintage Bike",
+      "image": "https://img.freepik.com/premium-photo/red-sports-bike_1159-812.jpg?1",
+      "category": "Vintage Bikes",
+      "price": 599.99,
+      "details": "A classic vintage bike with a nostalgic feel."
+    }
+  ]
+  
